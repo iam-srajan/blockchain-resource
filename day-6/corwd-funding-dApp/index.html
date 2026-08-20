@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Crowdfunding DApp</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1> Crowdfunding DApp</h1>
+
+    <button onclick="connectWallet()">
+      Connect MetaMask
+    </button>
+
+    <p>
+      Connected Account:
+    </p>
+
+    <p id="account">
+      Not Connected
+    </p>
+
+    <hr>
+
+    <h2>Contribute ETH</h2>
+
+    <input type="number" id="amount" placeholder="Enter ETH Amount">
+
+    <br>
+
+    <button onclick="contribute()">
+      Contribute
+    </button>
+
+    <hr>
+
+    <h2>Campaign Balance</h2>
+
+    <p id="balance">
+      0 ETH
+    </p>
+
+    <button onclick="getBalance()">
+      Refresh Balance
+    </button>
+
+    <hr>
+
+    <h2>Owner Section</h2>
+
+    <button onclick="withdraw()">
+      Withdraw Funds
+    </button>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

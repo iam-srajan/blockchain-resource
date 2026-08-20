@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Certificate DApp</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🎓 Student Certificate DApp</h1>
+
+
+    <!-- CONNECT WALLET -->
+
+    <button id="connectWalletBtn">
+
+      Connect Wallet
+
+    </button>
+
+
+    <p id="walletAddress">
+
+      Wallet not connected
+
+    </p>
+
+
+    <!-- ADD CERTIFICATE -->
+
+    <div class="card">
+
+      <h2>Add Certificate</h2>
+
+
+      <input type="text" id="certificateId" placeholder="Certificate ID">
+
+
+      <input type="text" id="studentName" placeholder="Student Name">
+
+
+      <input type="text" id="course" placeholder="Course">
+
+
+      <input type="text" id="institution" placeholder="Institution">
+
+
+      <button id="addCertificateBtn">
+
+        Add Certificate
+
+      </button>
+
+    </div>
+
+
+    <!-- VERIFY CERTIFICATE -->
+
+    <div class="card">
+
+      <h2>Verify Certificate</h2>
+
+
+      <input type="text" id="verifyCertificateId" placeholder="Enter Certificate ID">
+
+
+      <button id="verifyCertificateBtn">
+
+        Verify Certificate
+
+      </button>
+
+
+      <div id="certificateResult">
+
+        Enter a Certificate ID to verify.
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ethereum Bank DApp</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Web3.js -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🏦 Ethereum Bank DApp</h1>
+
+    <!-- Connect Wallet -->
+
+    <button id="connectWalletBtn">
+      Connect MetaMask
+    </button>
+
+    <p id="walletAddress">
+      Wallet not connected
+    </p>
+
+    <hr>
+
+
+    <!-- Bank Balance -->
+
+    <div class="card">
+
+      <h2>Your Bank Balance</h2>
+
+      <h1 id="balance">
+        0 ETH
+      </h1>
+
+      <button id="refreshBtn">
+        Refresh Balance
+      </button>
+
+    </div>
+
+
+    <!-- Deposit -->
+
+    <div class="card">
+
+      <h2>Deposit ETH</h2>
+
+      <input type="number" id="depositAmount" placeholder="Enter ETH amount" step="0.001">
+
+      <button id="depositBtn">
+        Deposit
+      </button>
+
+    </div>
+
+
+    <!-- Withdraw -->
+
+    <div class="card">
+
+      <h2>Withdraw ETH</h2>
+
+      <input type="number" id="withdrawAmount" placeholder="Enter ETH amount" step="0.001">
+
+      <button id="withdrawBtn">
+        Withdraw
+      </button>
+
+    </div>
+
+
+    <!-- Transaction History -->
+
+    <div class="card">
+
+      <h2>Transaction History</h2>
+
+      <div id="transactionHistory">
+
+        <p>
+          Connect your wallet to view transactions.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
