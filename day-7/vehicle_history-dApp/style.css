@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.hidden {
+  display: none;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+  margin-top: 0;
+}
+
+.address {
+  font-size: 13px;
+  word-break: break-all;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}

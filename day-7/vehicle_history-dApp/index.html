@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Vehicle Service History DApp
+  </title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <h1>
+        🚗 Vehicle Service History
+      </h1>
+
+      <p>
+        Store and verify vehicle service records
+        using blockchain.
+      </p>
+
+      <button id="connectWallet">
+        Connect MetaMask
+      </button>
+
+      <p id="walletAddress">
+        Wallet not connected
+      </p>
+
+    </header>
+
+
+    <!-- REGISTER VEHICLE -->
+
+    <section class="card">
+
+      <h2>
+        Register Vehicle
+      </h2>
+
+
+      <label>
+        Registration Number
+      </label>
+
+      <input type="text" id="registrationNumber" placeholder="Example: GJ03AB1234">
+
+
+      <label>
+        Owner Name
+      </label>
+
+      <input type="text" id="ownerName" placeholder="Enter owner name">
+
+
+      <label>
+        Vehicle Model
+      </label>
+
+      <input type="text" id="vehicleModel" placeholder="Example: Honda City">
+
+
+      <button id="registerVehicleButton">
+        Register Vehicle
+      </button>
+
+    </section>
+
+
+    <!-- ADD SERVICE RECORD -->
+
+    <section class="card">
+
+      <h2>
+        Add Service Record
+      </h2>
+
+
+      <label>
+        Registration Number
+      </label>
+
+      <input type="text" id="serviceRegistrationNumber" placeholder="Example: GJ03AB1234">
+
+
+      <label>
+        Service Center
+      </label>
+
+      <input type="text" id="serviceCenter" placeholder="Example: Honda Service Center">
+
+
+      <label>
+        Service Type
+      </label>
+
+      <select id="serviceType">
+
+        <option value="General Service">
+          General Service
+        </option>
+
+        <option value="Oil Change">
+          Oil Change
+        </option>
+
+        <option value="Repair">
+          Repair
+        </option>
+
+        <option value="Tyre Replacement">
+          Tyre Replacement
+        </option>
+
+        <option value="Battery Replacement">
+          Battery Replacement
+        </option>
+
+      </select>
+
+
+      <label>
+        Service Description
+      </label>
+
+      <textarea id="serviceDescription" placeholder="Describe the service performed"></textarea>
+
+
+      <label>
+        Service Date
+      </label>
+
+      <input type="date" id="serviceDate">
+
+
+      <label>
+        Vehicle Mileage
+      </label>
+
+      <input type="number" id="mileage" placeholder="Example: 25000">
+
+
+      <button id="addServiceButton">
+        Add Service Record
+      </button>
+
+    </section>
+
+
+    <!-- SEARCH VEHICLE -->
+
+    <section class="card">
+
+      <h2>
+        Search Vehicle History
+      </h2>
+
+
+      <label>
+        Registration Number
+      </label>
+
+      <input type="text" id="searchRegistrationNumber" placeholder="Example: GJ03AB1234">
+
+
+      <button id="searchButton">
+        Search Vehicle
+      </button>
+
+    </section>
+
+
+    <!-- VEHICLE DETAILS -->
+
+    <section id="vehicleDetails" class="card hidden">
+
+      <h2>
+        Vehicle Details
+      </h2>
+
+      <div id="vehicleInfo"></div>
+
+    </section>
+
+
+    <!-- SERVICE HISTORY -->
+
+    <section id="serviceHistorySection" class="hidden">
+
+      <h2>
+        Service History
+      </h2>
+
+      <div id="serviceHistory" class="service-container"></div>
+
+    </section>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.4/dist/web3.min.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

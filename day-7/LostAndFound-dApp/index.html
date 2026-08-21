@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lost & Found DApp</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <h1>🔎 Lost & Found DApp</h1>
+
+      <p>
+        Report lost and found items on the blockchain
+      </p>
+
+      <button id="connectWallet">
+        Connect MetaMask
+      </button>
+
+      <p id="walletAddress">
+        Wallet not connected
+      </p>
+
+    </header>
+
+
+    <!-- REPORT ITEM -->
+
+    <section class="card">
+
+      <h2>Report an Item</h2>
+
+
+      <label>
+        Item Name
+      </label>
+
+      <input type="text" id="itemName" placeholder="Example: Black Wallet">
+
+
+      <label>
+        Description
+      </label>
+
+      <textarea id="description" placeholder="Describe the item"></textarea>
+
+
+      <label>
+        Location
+      </label>
+
+      <input type="text" id="location" placeholder="Example: College Library">
+
+
+      <label>
+        Status
+      </label>
+
+      <select id="status">
+
+        <option value="0">
+          Lost
+        </option>
+
+        <option value="1">
+          Found
+        </option>
+
+      </select>
+
+
+      <button id="reportButton">
+        Report Item
+      </button>
+
+    </section>
+
+
+    <!-- ITEMS -->
+
+    <section>
+
+      <div class="items-header">
+
+        <h2>Reported Items</h2>
+
+        <button id="refreshButton">
+          Refresh Items
+        </button>
+
+      </div>
+
+
+      <div id="itemsContainer" class="items-container">
+
+        <p>
+          Connect your wallet and load items.
+        </p>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- WEB3.JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.4/dist/web3.min.js"></script>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
